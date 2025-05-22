@@ -15,22 +15,22 @@
 * оценка результатов разработки верификационной системы с использованием фреймворков cocotb и PyUVM.
 
 ### Архитектура решения
-![Архитектура решения](https://github.com/VetaShine/RGU-PyUVM-Verification/images/solution_architecture.png)
+![Архитектура решения](https://github.com/VetaShine/RGU-PyUVM-Verification/blob/main/images/solution_architecture.png)
 
 ### Эталонная модель (scoreboard)
 Функциональная схема эталонной модели:
 
-![Функциональная схема эталонной модели](https://github.com/VetaShine/RGU-PyUVM-Verification/images/scoreboard_functional_diagram.png)
+![Функциональная схема эталонной модели](https://github.com/VetaShine/RGU-PyUVM-Verification/blob/main/images/scoreboard_functional_diagram.png)
 
 При изменении значения в регистре блока происходит модификация этого регистра в регистровой модели-имитации генератора сброса. Такая модель используется для сравнения полученных данных и ожидаемых результатов при транзакциях на чтение.
 
 Схема обработки APB-транзакций эталонной моделью:
 
-![Обработка APB-транзакций](https://github.com/VetaShine/RGU-PyUVM-Verification/images/APB_transaction_processing_scheme_by_scoreboard.png)
+![Обработка APB-транзакций](https://github.com/VetaShine/RGU-PyUVM-Verification/blob/main/images/APB_transaction_processing_scheme_by_scoreboard.png)
 
 Схема обработки транзакций сброса эталонной моделью:
 
-![Обработка транзакций сброса](https://github.com/VetaShine/RGU-PyUVM-Verification/images/reset_transaction_processing_scheme_by_scoreboard.png)
+![Обработка транзакций сброса](https://github.com/VetaShine/RGU-PyUVM-Verification/blob/main/images/reset_transaction_processing_scheme_by_scoreboard.png)
 
 ### Результаты
 В результате была разработана и внедрена автоматизированная система верификации цифрового блока генератора сбросов с использованием фреймворков cocotb и PyUVM. По окончании верификации было достгнуто 100%-ное покрытие. Выявленные ошибки позволили устранить проблемы в цифровом дизайне, снизив шансы на перевыпуск системы на кристалле. Перспективы дальнейшего развития разработанной системы верификации заключаются в ее переиспользуемости в рамках программ по развитию элементной базы электроники отечественной разработки.
